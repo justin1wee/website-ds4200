@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">My Personal Site</a>
+      <nav class="nav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html" aria-current="page">More About Me</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-content">
+      <h2>Exploring Data Visualization and Design</h2>
+      
+      <div class="content-with-image">
+        <div class="text-content">
+          <p>
+            Data visualization has become a cornerstone of how I think about communicating information. There’s something deeply satisfying about taking raw numbers and turning them into visual narratives that people can understand at a glance. Over the past few years, I’ve experimented with various tools and techniques—from simple bar charts in Python to interactive dashboards built with JavaScript libraries like D3.js. Each project teaches me something new about the balance between aesthetics and functionality, between showing everything and showing just enough. The challenge isn’t just making pretty charts; it’s ensuring that the visualization serves its purpose, whether that’s revealing patterns, supporting an argument, or helping someone make a decision.
+          </p>
+          <p>
+            When I approach a visualization project, I start by asking what story the data wants to tell. Sometimes the answer is straightforward: showing trends over time, comparing categories, or highlighting outliers. Other times, it requires more exploration—maybe the interesting insight isn’t in the obvious place, or maybe the data needs to be transformed or filtered to reveal what matters. I’ve learned that good visualizations require iteration. A first draft might be technically correct but miss the mark on clarity or impact. By refining color choices, adjusting scales, or reorganizing the layout, I can often transform a confusing chart into something that immediately communicates its message. This iterative process keeps the work engaging, even when wrestling with tricky data or figuring out the quirks of a new tool.
+          </p>
+          <p>
+            Beyond technical skills, I’m fascinated by how different audiences interpret the same visualization differently. A chart that works perfectly for a technical audience might be overwhelming for someone less familiar with data. Learning to adapt my designs for different contexts—academic papers, business presentations, public-facing websites—has become an ongoing practice. I believe the best visualizations are both accurate and accessible, and finding that balance is what keeps me excited about this field. As I continue learning, I hope to push my work further toward that ideal of clarity, beauty, and usefulness.
+          </p>
+        </div>
+        <div class="image-content">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Data visualization on a computer screen showing charts and graphs.">
+        </div>
+      </div>
+
+      <section class="interests-section">
+        <h3>Key Areas of Interest</h3>
+        <ul class="interest-list">
+          <li>Interactive data visualizations with D3.js and similar libraries</li>
+          <li>Statistical graphics and exploratory data analysis</li>
+          <li>Design principles for effective information communication</li>
+          <li>Web-based dashboard development</li>
+          <li>Color theory and accessibility in visualization</li>
+          <li>Storytelling through data narratives</li>
+        </ul>
+      </section>
+
+      <section class="back-link">
+        <a href="./index.html" class="button">Return to Home</a>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> My Personal Site</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

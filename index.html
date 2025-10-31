@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">My Personal Site</a>
+      <nav class="nav">
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./about.html">More About Me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to My Website</h1>
+        <p>
+          Hello and thanks for stopping by! This website is a small space on the internet where I share a bit about who I am, what I care about, and how I like to learn. I’m interested in the intersection of data, design, and communication—specifically how visual storytelling can help people understand complex ideas quickly and clearly. When I build things, I focus on clarity, usability, and a touch of polish that makes the experience feel thoughtful. I enjoy experimenting with simple layouts, color, and typography to create clean interfaces that emphasize the content. Beyond design and visualization, I enjoy teaching myself new tools and exploring how to turn data into approachable insights. Whether it’s a quick chart, a small interactive prototype, or a long-form explanation, I love the process of iterating toward something that feels both functional and friendly.
+        </p>
+        <p>
+          Outside of that, I’m curious by nature: I like reading about technology, keeping notes on ideas, and taking on projects that stretch my skills in small but meaningful ways. This site will grow as I continue learning. For now, think of it as an introduction and a living notebook. If any of this resonates with you—or if you have ideas, feedback, or projects you think I’d enjoy—feel free to reach out using the contact links below. I’m always happy to connect and learn from others.
+        </p>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Laptop and notebook on a desk representing creative work.">
+      </div>
+    </section>
+
+    <section class="cta">
+      <a class="button" href="./about.html">Learn more about me</a>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        I’d love to hear from you. You can reach me at
+        <a href="mailto:example@email.com">example@email.com</a>
+        or connect with me on
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        and
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> My Personal Site</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
