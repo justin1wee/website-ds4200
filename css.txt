@@ -1,0 +1,108 @@
+Website Link: https://justin1wee.github.io/website-ds4200/
+
+## **1. Custom Typography & Fonts**
+
+- **Google Fonts**:
+  - **Inter** for body text (weights 400, 600, 800)
+  - **Playfair Display** (serif) for headings (weight 700)
+- **Heading hierarchy**:
+  - `h1`: 3.5rem, Playfair Display, line-height 1.2
+  - `h2`: 2.5rem, Playfair Display, line-height 1.3
+  - `h3`: 1.75rem, Inter, weight 600
+- **Body text**: Inter, 16px, line-height 1.7
+
+## **2. Custom Color Scheme**
+
+CSS custom properties (`:root` variables):
+- **Backgrounds**: `#fafafa` (primary), `#ffffff` (secondary)
+- **Text**: `#1a1a1a` (primary), `#4a4a4a` (secondary)
+- **Accent**: `#2563eb` (blue), `#1d4ed8` (hover)
+- **Borders**: `#e5e7eb` (light gray)
+- **Header**: white background
+- **Footer**: `#1f2937` with light text (`#f9fafb`)
+
+## **3. Layout & Spacing Customizations**
+
+- **Container**: max-width 1200px, centered, 2rem horizontal padding
+- **Margin/Padding adjustments**:
+  - Main content: 4rem vertical padding
+  - Hero section: 4rem gap between columns, 2rem padding
+  - Contact section: 3rem padding, 4rem top margin
+  - Interests section: 2.5rem padding, 3rem margins
+- **Grid layouts**:
+  - Hero: 2-column grid (1fr 1fr), 4rem gap
+  - Content-with-image: 2-column grid, 3rem gap
+- **Box model**: Universal `box-sizing: border-box`
+
+## **4. Header/Navigation Styling**
+
+- **Sticky header**: Fixed at top, z-index 100
+- **Border**: 2px bottom border with shadow
+- **Flex layout**: Space-between for brand and nav
+- **Navigation links**:
+  - Underline on hover/active (2px border)
+  - Color transitions (0.2s)
+  - Active page indicator via `aria-current`
+
+## **5. Button Styling**
+
+- **Custom button class**:
+  - Blue background (`--accent-color`)
+  - 8px border-radius
+  - Padding: 0.875rem × 2rem
+  - Box shadow with subtle elevation
+- **Hover effects**:
+  - Darker blue background
+  - Slight lift (`translateY(-2px)`)
+  - Enhanced shadow
+  - Smooth transitions (0.2s)
+
+## **6. Image Styling**
+
+- **Border-radius**: 12px (8px on mobile)
+- **Box shadows**: `0 10px 30px rgba(0, 0, 0, 0.1)`
+- **Responsive**: 100% width, auto height, `object-fit: cover`
+
+## **7. Interest List Customization**
+
+- **Custom bullets**: Arrow (→) instead of default bullets
+- **Positioning**: Absolute positioning for custom arrow
+- **Styling**: Blue accent color, border separators
+- **Spacing**: 0.75rem padding, 2rem left padding for arrow space
+
+## **8. Section-Specific Styling**
+
+- **Contact section**: White background, rounded corners (12px), shadow, 3rem padding
+- **Interests section**: White background, rounded corners, shadow, custom list styling
+- **Footer**: Dark background with light text, centered content
+
+## **9. Responsive Design**
+
+Two breakpoints:
+- **968px and below**:
+  - Single-column layouts for hero and content sections
+  - Reduced heading sizes (h1: 2.5rem, h2: 2rem)
+  - Reduced navigation gap
+- **640px and below**:
+  - Reduced container padding (1.5rem)
+  - Vertical navigation layout
+  - Smaller headings (h1: 2rem, h2: 1.75rem)
+  - Reduced main padding (2rem)
+  - Smaller image border-radius (8px)
+
+## **10. Advanced CSS Features**
+
+- **CSS Variables**: Centralized color management via `:root`
+- **Flexbox**: Header layout, body structure
+- **CSS Grid**: Hero and content sections
+- **Transitions**: Smooth hover effects (0.2s ease)
+- **Transform**: Button hover lift effect
+- **Box shadows**: Depth and elevation (multiple levels)
+- **Sticky positioning**: Header stays at top when scrolling
+
+## **11. Visual Enhancements**
+
+- **Shadows**: Subtle shadows on header, images, buttons, and sections
+- **Border-radius**: Rounded corners (8px–12px)
+- **Hover states**: Color changes, transforms, and border animations
+- **Typography hierarchy**: Clear contrast between heading and body sizes
